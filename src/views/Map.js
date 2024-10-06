@@ -20,7 +20,7 @@ import React from "react";
 // reactstrap components
 import { Card, CardHeader, CardBody, Row, Col } from "reactstrap";
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-
+import 'leaflet/dist/leaflet.css'
 
 function Map() {
   return (
