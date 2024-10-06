@@ -1,0 +1,38 @@
+h2 {
+  color: #007bff; /* Bootstrap primary color */
+  font-size: 24px; /* Font size */
+  margin-bottom: 10px; /* Space below the heading */
+}
+
+.location-input {
+  padding: 10px;
+  border: 2px solid #007bff; /* Bootstrap primary color */
+  border-radius: 5px;
+  margin-right: 10px; /* Space between input and button */
+  width: 300px; /* Width of the input */
+  transition: border-color 0.3s;
+}
+
+.location-input:focus {
+  border-color: #0056b3; /* Darker shade on focus */
+  outline: none; /* Remove default outline */
+}
+
+.show-location-button {
+  padding: 10px 15px;
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.show-location-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+form {
+  display: inline-block; /* Inline-block for centering */
+  text-align: center; /* Center text inside */
+}

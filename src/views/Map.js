@@ -16,7 +16,7 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-import React from "react";
+/* import React from "react";
 // reactstrap components
 import { Card, CardHeader, CardBody, Row, Col } from "reactstrap";
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
@@ -25,20 +25,43 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 
 function Map() {
   return (
-<div className="content" style={{ height: '400px' }}>
-      <MapContainer center={[51.505, -0.09]} zoom={12}>
-        <TileLayer
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        />
-        <Marker position={[51.505, -0.09]}>
-          <Popup>
-            London
-          </Popup>
-        </Marker>
-      </MapContainer>
-    </div>
+    <>
+      <div className="content">
+        <Row>
+          <Col md="12">
+            <Card>
+              <CardHeader>Street Maps</CardHeader>
+              <CardBody>
+                <div>
+                <MapContainer center={[51.505, -0.09]} zoom={13}>
+      <TileLayer
+        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+      />
+    </MapContainer>
+                </div>
+              </CardBody>
+            </Card>
+          </Col>
+        </Row>
+      </div>
+    </>
   );
 }
 
-export default Map;
+export default Map;*/
+
+import React from 'react';
+import MapboxComponent from './MapComponent';
+
+const App = () => {
+  return (
+    <div>
+      <h1></h1><h1></h1><h1></h1><h1></h1>
+      <MapboxComponent />
+    </div>
+  );
+};
+
+export default App;
+
