@@ -193,7 +193,7 @@ function Dashboard() {
           <Col md="8">
             <Card className="card-chart">
               <CardHeader>
-                <CardTitle tag="h5">NASDAQ: AAPL</CardTitle>
+                <CardTitle tag="h5">Donated Items</CardTitle>
                 <p className="card-category">Line Chart with Points</p>
               </CardHeader>
               <CardBody>
@@ -206,8 +206,7 @@ function Dashboard() {
               </CardBody>
               <CardFooter>
                 <div className="chart-legend">
-                  <i className="fa fa-circle text-info" /> Tesla Model S{" "}
-                  <i className="fa fa-circle text-warning" /> BMW 5 Series
+                  <i className="fa fa-circle text-warning" /> Donors
                 </div>
                 <hr />
                 <div className="card-stats">
