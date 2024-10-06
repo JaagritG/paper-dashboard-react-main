@@ -15,8 +15,7 @@
 
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-*/
-import React from "react";
+*/import React from "react";
 // react plugin used to create charts
 import { Line, Pie } from "react-chartjs-2";
 // reactstrap components
@@ -28,6 +27,7 @@ import {
   CardTitle,
   Row,
   Col,
+  Button, // Import Button from reactstrap
 } from "reactstrap";
 // core components
 import {
@@ -37,6 +37,11 @@ import {
 } from "variables/charts.js";
 
 function Dashboard() {
+  // Function to open a new tab to example.com
+  const openNewTab = () => {
+    window.open("http://localhost:5173/", "_blank");
+  };
+
   return (
     <>
       <div className="content">
@@ -120,6 +125,16 @@ function Dashboard() {
             </Card>
           </Col>
         </Row>
+
+        {/* Add the new button here */}
+        <Row>
+          <Col lg="12">
+            <Button color="primary" onClick={openNewTab}>
+              Open Example.com
+            </Button>
+          </Col>
+        </Row>
+
         <Row>
           <Col md="12">
             <Card>
@@ -162,7 +177,6 @@ function Dashboard() {
                   <i className="fa fa-circle text-primary" /> Fulfilled{" "}
                   <i className="fa fa-circle text-warning" /> Pending{" "}
                   <i className="fa fa-circle text-danger" /> Cancelled{" "}
-                  
                 </div>
               </CardFooter>
             </Card>
