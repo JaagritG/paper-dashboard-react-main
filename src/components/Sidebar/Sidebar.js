@@ -63,7 +63,7 @@ function Sidebar(props) {
         <a
           className="simple-text logo-normal"
         >
-          Plate to Hand
+          Scan2Donate
         </a>
       </div>
       <div className="sidebar-wrapper" ref={sidebar}>
