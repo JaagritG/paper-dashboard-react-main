@@ -17,9 +17,12 @@
 
 */
 import React from "react";
+import NotificationAlert from "react-notification-alert";
 
 // reactstrap components
 import {
+  UncontrolledAlert,
+  Alert,
   Button,
   Card,
   CardHeader,
@@ -33,11 +36,42 @@ import {
   Col,
 } from "reactstrap";
 
+
 function Charity() {
+  const notificationAlert = React.useRef();
+  
+  const notify = (place) => {
+    var color = Math.floor(Math.random() * 5 + 1);
+    var type;
+    switch (color) {
+      case 1: type = "primary"; break;
+      case 2: type = "success"; break;
+      case 3: type = "danger"; break;
+      case 4: type = "warning"; break;
+      case 5: type = "info"; break;
+      default: break;
+    }
+    var options = {
+      place: place,
+      message: (
+        <div>
+          <div>
+            Your request has been submitted!
+          </div>
+        </div>
+      ),
+      type: type,
+      icon: "nc-icon nc-bell-55",
+      autoDismiss: 7,
+    };
+    notificationAlert.current.notificationAlert(options);
+  };
   return (
     <>
+        
       <div className="content">
         <Row>
+          <NotificationAlert ref={notificationAlert} /> {/* Moved here */}
           <Col md="4">
             <Card className="card-user">
               <div className="image">
@@ -49,7 +83,7 @@ function Charity() {
                     <img
                       alt="..."
                       className="avatar border-gray"
-                      src={require("assets/img/mike.jpg")}
+                      src={require("assets/img/SDG2.png")}
                     />
                     <h5 className="title">Food for All</h5>
                   </a>
@@ -157,9 +191,11 @@ function Charity() {
                   <Row>
                     <div className="update ml-auto mr-auto">
                       <Button
+                        block
                         className="btn-round"
                         color="primary"
-                        type="submit"
+                        type="button"
+                        onClick={() => notify("tl")}
                       >
                         Make New Request
                       </Button>
