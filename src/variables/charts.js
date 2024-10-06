@@ -129,26 +129,23 @@ const dashboardEmailStatisticsChart = {
   },
 };
 
+
+
 const dashboardNASDAQChart = {
   data: (canvas) => {
     return {
       labels: [
-        "Jan",
-        "Feb",
-        "Mar",
-        "Apr",
-        "May",
-        "Jun",
-        "Jul",
-        "Aug",
-        "Sep",
-        "Oct",
-        "Nov",
-        "Dec",
+        'apple',
+        'orange',
+        'banana',
+        'bean',
+        'meat',
+        'bread'
       ],
+
       datasets: [
         {
-          data: [0, 19, 15, 20, 30, 40, 40, 50, 25, 30, 50, 70],
+          data: [5, 8, 20, 21, 30, 40],
           fill: false,
           borderColor: "#fbc658",
           backgroundColor: "transparent",
@@ -159,7 +156,7 @@ const dashboardNASDAQChart = {
           tension: 0.4,
         },
         {
-          data: [0, 5, 10, 12, 20, 27, 30, 34, 42, 45, 55, 63],
+          data: [5, 8, 20, 21, 30, 40],
           fill: false,
           borderColor: "#51CACF",
           backgroundColor: "transparent",
