@@ -51,136 +51,29 @@ function Charity() {
                       className="avatar border-gray"
                       src={require("assets/img/mike.jpg")}
                     />
-                    <h5 className="title">Chet Faker</h5>
+                    <h5 className="title">Food for All</h5>
                   </a>
-                  <p className="description">@chetfaker</p>
                 </div>
-                <p className="description text-center">
-                  "I like the way you work it <br />
-                  No diggity <br />I wanna bag it up"
-                </p>
               </CardBody>
               <CardFooter>
                 <hr />
                 <div className="button-container">
                   <Row>
-                    <Col className="ml-auto" lg="3" md="6" xs="6">
+                    <Col className="ml-auto" lg="5" md="6" xs="6">
                       <h5>
-                        12 <br />
-                        <small>Files</small>
+                        3 <br />
+                        <small>Active Requests</small>
                       </h5>
                     </Col>
                     <Col className="ml-auto mr-auto" lg="4" md="6" xs="6">
                       <h5>
-                        2GB <br />
-                        <small>Used</small>
-                      </h5>
-                    </Col>
-                    <Col className="mr-auto" lg="3">
-                      <h5>
-                        24,6$ <br />
-                        <small>Spent</small>
+                        2 <br />
+                        <small>Requests Pledged</small>
                       </h5>
                     </Col>
                   </Row>
                 </div>
               </CardFooter>
-            </Card>
-            <Card>
-              <CardHeader>
-                <CardTitle tag="h4">Team Members</CardTitle>
-              </CardHeader>
-              <CardBody>
-                <ul className="list-unstyled team-members">
-                  <li>
-                    <Row>
-                      <Col md="2" xs="2">
-                        <div className="avatar">
-                          <img
-                            alt="..."
-                            className="img-circle img-no-padding img-responsive"
-                            src={require("assets/img/faces/ayo-ogunseinde-2.jpg")}
-                          />
-                        </div>
-                      </Col>
-                      <Col md="7" xs="7">
-                        DJ Khaled <br />
-                        <span className="text-muted">
-                          <small>Offline</small>
-                        </span>
-                      </Col>
-                      <Col className="text-right" md="3" xs="3">
-                        <Button
-                          className="btn-round btn-icon"
-                          color="success"
-                          outline
-                          size="sm"
-                        >
-                          <i className="fa fa-envelope" />
-                        </Button>
-                      </Col>
-                    </Row>
-                  </li>
-                  <li>
-                    <Row>
-                      <Col md="2" xs="2">
-                        <div className="avatar">
-                          <img
-                            alt="..."
-                            className="img-circle img-no-padding img-responsive"
-                            src={require("assets/img/faces/joe-gardner-2.jpg")}
-                          />
-                        </div>
-                      </Col>
-                      <Col md="7" xs="7">
-                        Creative Tim <br />
-                        <span className="text-success">
-                          <small>Available</small>
-                        </span>
-                      </Col>
-                      <Col className="text-right" md="3" xs="3">
-                        <Button
-                          className="btn-round btn-icon"
-                          color="success"
-                          outline
-                          size="sm"
-                        >
-                          <i className="fa fa-envelope" />
-                        </Button>
-                      </Col>
-                    </Row>
-                  </li>
-                  <li>
-                    <Row>
-                      <Col md="2" xs="2">
-                        <div className="avatar">
-                          <img
-                            alt="..."
-                            className="img-circle img-no-padding img-responsive"
-                            src={require("assets/img/faces/clem-onojeghuo-2.jpg")}
-                          />
-                        </div>
-                      </Col>
-                      <Col className="col-ms-7" xs="7">
-                        Flume <br />
-                        <span className="text-danger">
-                          <small>Busy</small>
-                        </span>
-                      </Col>
-                      <Col className="text-right" md="3" xs="3">
-                        <Button
-                          className="btn-round btn-icon"
-                          color="success"
-                          outline
-                          size="sm"
-                        >
-                          <i className="fa fa-envelope" />
-                        </Button>
-                      </Col>
-                    </Row>
-                  </li>
-                </ul>
-              </CardBody>
             </Card>
           </Col>
           <Col md="8">
@@ -193,9 +86,9 @@ function Charity() {
                   <Row>
                     <Col className="pr-1" md="5">
                       <FormGroup>
-                        <label>Company (disabled)</label>
+                        <label>Role</label>
                         <Input
-                          defaultValue="Creative Code Inc."
+                          defaultValue="Charity"
                           disabled
                           placeholder="Company"
                           type="text"
@@ -206,7 +99,7 @@ function Charity() {
                       <FormGroup>
                         <label>Username</label>
                         <Input
-                          defaultValue="michael23"
+                          defaultValue="Jake Doe"
                           placeholder="Username"
                           type="text"
                         />
@@ -217,7 +110,7 @@ function Charity() {
                         <label htmlFor="exampleInputEmail1">
                           Email address
                         </label>
-                        <Input placeholder="Email" type="email" />
+                        <Input placeholder="Email" type="email" defaultValue="jakedoe@myyahoo.co.in"/>
                       </FormGroup>
                     </Col>
                   </Row>
@@ -226,7 +119,7 @@ function Charity() {
                       <FormGroup>
                         <label>First Name</label>
                         <Input
-                          defaultValue="Chet"
+                          defaultValue="Jake"
                           placeholder="Company"
                           type="text"
                         />
@@ -236,7 +129,7 @@ function Charity() {
                       <FormGroup>
                         <label>Last Name</label>
                         <Input
-                          defaultValue="Faker"
+                          defaultValue="Doe"
                           placeholder="Last Name"
                           type="text"
                         />
@@ -248,7 +141,7 @@ function Charity() {
                       <FormGroup>
                         <label>Address</label>
                         <Input
-                          defaultValue="Melbourne, Australia"
+                          defaultValue="12XX Military Trail"
                           placeholder="Home Address"
                           type="text"
                         />
@@ -260,7 +153,7 @@ function Charity() {
                       <FormGroup>
                         <label>City</label>
                         <Input
-                          defaultValue="Melbourne"
+                          defaultValue="Toronto"
                           placeholder="City"
                           type="text"
                         />
@@ -270,7 +163,7 @@ function Charity() {
                       <FormGroup>
                         <label>Country</label>
                         <Input
-                          defaultValue="Australia"
+                          defaultValue="Canada"
                           placeholder="Country"
                           type="text"
                         />
@@ -279,18 +172,7 @@ function Charity() {
                     <Col className="pl-1" md="4">
                       <FormGroup>
                         <label>Postal Code</label>
-                        <Input placeholder="ZIP Code" type="number" />
-                      </FormGroup>
-                    </Col>
-                  </Row>
-                  <Row>
-                    <Col md="12">
-                      <FormGroup>
-                        <label>About Me</label>
-                        <Input
-                          type="textarea"
-                          defaultValue="Oh so, your weak rhyme You doubt I'll bother, reading into it"
-                        />
+                        <Input defaultValue ="M1X XXX"  placeholder="M1X XXX" type="number" />
                       </FormGroup>
                     </Col>
                   </Row>
@@ -301,7 +183,7 @@ function Charity() {
                         color="primary"
                         type="submit"
                       >
-                        Update Profile
+                        Make New Request
                       </Button>
                     </div>
                   </Row>

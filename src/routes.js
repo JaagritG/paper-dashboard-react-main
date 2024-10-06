@@ -25,6 +25,7 @@ import TableList from "views/Tables.js";
 import Maps from "views/Map.js";
 import UserPage from "views/User.js";
 import UpgradeToPro from "views/Upgrade.js";
+import Detect from "views/Detect";
 
 var routes = [
   {
@@ -32,6 +33,13 @@ var routes = [
     name: "Dashboard",
     icon: "nc-icon nc-bank",
     component: <Dashboard />,
+    layout: "/admin",
+  },
+  {
+    path: "/Detect",
+    name: "Detect",
+    icon: "nc-icon nc-camera-compact",
+    component: <Detect />,
     layout: "/admin",
   },
   {
@@ -64,7 +72,7 @@ var routes = [
   },
   {
     path: "/charity",
-    name: "Charity",
+    name: "Charity Profile",
     icon: "nc-icon nc-single-02",
     component: <Charity />,
     layout: "/admin",
