@@ -22,30 +22,16 @@ import { Card, CardHeader, CardBody, Row, Col } from "reactstrap";
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 
 
-
 function Map() {
   return (
-    <>
-      <div className="content">
-        <Row>
-          <Col md="12">
-            <Card>
-              <CardHeader>Street Maps</CardHeader>
-              <CardBody>
-                <div>
-                <MapContainer center={[51.505, -0.09]} zoom={13}>
-      <TileLayer
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-      />
-    </MapContainer>
-                </div>
-              </CardBody>
-            </Card>
-          </Col>
-        </Row>
-      </div>
-    </>
+<div className="content" style={{ height: '100px' }}>
+      <MapContainer center={[43.78, -79.18]} zoom={14}>
+        <TileLayer
+          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        />
+      </MapContainer>
+    </div>
   );
 }
 
