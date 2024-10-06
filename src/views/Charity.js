@@ -97,9 +97,9 @@ function Charity() {
                     </Col>
                     <Col className="px-1" md="3">
                       <FormGroup>
-                        <label>Username</label>
+                        <label>Organisation Name</label>
                         <Input
-                          defaultValue="Jake Doe"
+                          defaultValue="Food for All"
                           placeholder="Username"
                           type="text"
                         />
@@ -110,29 +110,7 @@ function Charity() {
                         <label htmlFor="exampleInputEmail1">
                           Email address
                         </label>
-                        <Input placeholder="Email" type="email" defaultValue="jakedoe@myyahoo.co.in"/>
-                      </FormGroup>
-                    </Col>
-                  </Row>
-                  <Row>
-                    <Col className="pr-1" md="6">
-                      <FormGroup>
-                        <label>First Name</label>
-                        <Input
-                          defaultValue="Jake"
-                          placeholder="Company"
-                          type="text"
-                        />
-                      </FormGroup>
-                    </Col>
-                    <Col className="pl-1" md="6">
-                      <FormGroup>
-                        <label>Last Name</label>
-                        <Input
-                          defaultValue="Doe"
-                          placeholder="Last Name"
-                          type="text"
-                        />
+                        <Input placeholder="Email" type="email" defaultValue="food_for_all@myyahoo.co.in"/>
                       </FormGroup>
                     </Col>
                   </Row>
