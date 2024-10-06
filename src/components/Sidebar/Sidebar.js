@@ -22,7 +22,7 @@ import { Nav } from "reactstrap";
 // javascript plugin used to create scrollbars on windows
 import PerfectScrollbar from "perfect-scrollbar";
 
-import logo from "logo.svg";
+import logo from "Our_logo.svg";
 
 var ps;
 
@@ -54,7 +54,6 @@ function Sidebar(props) {
     >
       <div className="logo">
         <a
-          href="https://www.creative-tim.com"
           className="simple-text logo-mini"
         >
           <div className="logo-img">
@@ -62,7 +61,6 @@ function Sidebar(props) {
           </div>
         </a>
         <a
-          href="https://www.creative-tim.com"
           className="simple-text logo-normal"
         >
           Plate to Hand
