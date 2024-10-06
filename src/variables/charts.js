@@ -33,23 +33,26 @@ const dashboard24HoursPerformanceChart = {
       ],
       datasets: [
         {
-          borderColor: "#6bd098",
-          backgroundColor: "#6bd098",
-          pointRadius: 0,
-          pointHoverRadius: 0,
+          label: 'Performance', // This label should be present for the legend
+          borderColor: "skyblue", // Change the border color to sky blue
+          backgroundColor: "rgba(135, 206, 235, 0.3)", // Change the fill color to a light sky blue
+          pointRadius: 5, // Radius of points on the line
+          pointHoverRadius: 7, // Radius of points on hover
           borderWidth: 3,
-          tension: 0.4,
-          fill: true,
+          tension: 0.4, // Smoothness of the line
+          fill: true, // Fill the area under the line
           data: [5000, 6780, 8190, 9000, 9500, 9867, 10300, 12300, 13450, 15000],
         },
-        
       ],
     };
   },
   options: {
     plugins: {
-      legend: { display: false },
-      tooltip: { enabled: false },
+      legend: {
+        display: true,
+        position: 'top', // You can change the position if needed
+      },
+      tooltip: { enabled: true }, // Enable tooltips
     },
     scales: {
       y: {
@@ -60,14 +63,13 @@ const dashboard24HoursPerformanceChart = {
         },
         grid: {
           drawBorder: false,
-          display: false,
+          color: "#e0e0e0", // Add grid line color for better visibility
         },
       },
       x: {
-        barPercentage: 1.6,
         grid: {
           drawBorder: false,
-          display: false,
+          color: "#e0e0e0", // Add grid line color for better visibility
         },
         ticks: {
           padding: 20,
@@ -77,6 +79,7 @@ const dashboard24HoursPerformanceChart = {
     },
   },
 };
+
 
 const dashboardEmailStatisticsChart = {
   data: (canvas) => {

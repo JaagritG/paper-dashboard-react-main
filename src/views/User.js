@@ -89,12 +89,12 @@ function User() {
                           <img
                             alt="..."
                             className="img-circle img-no-padding img-responsive"
-                            src={require("assets/img/faces/ayo-ogunseinde-2.jpg")}
+                            src={require("assets/img/faces/Harvest Hope Primary Logo - green.png")}
                           />
                         </div>
                       </Col>
                       <Col md="7" xs="7">
-                        DJ Khaled <br />
+                        Harvest Hope <br />
                         <span className="text-muted">
                           <small>No Requests</small>
                         </span>
@@ -118,14 +118,14 @@ function User() {
                           <img
                             alt="..."
                             className="img-circle img-no-padding img-responsive"
-                            src={require("assets/img/faces/joe-gardner-2.jpg")}
+                            src={require("assets/img/faces/NourishNow.png")}
                           />
                         </div>
                       </Col>
                       <Col md="7" xs="7">
-                        Creative Tim <br />
+                         Nourish Now <br />
                         <span className="text-success">
-                          <small>Items Requested</small>
+                          <small> Items Requested</small>
                         </span>
                       </Col>
                       <Col className="text-right" md="3" xs="3">
@@ -147,12 +147,12 @@ function User() {
                           <img
                             alt="..."
                             className="img-circle img-no-padding img-responsive"
-                            src={require("assets/img/faces/clem-onojeghuo-2.jpg")}
+                            src={require("assets/img/faces/giving plate.png")}
                           />
                         </div>
                       </Col>
                       <Col className="col-ms-7" xs="7">
-                        Flume <br />
+                      The Giving Plate <br />
                         <span className="text-danger">
                           <small>Urgent Request</small>
                         </span>

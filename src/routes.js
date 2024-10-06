@@ -19,7 +19,7 @@
 import Charity from "views/Charity";
 import Dashboard from "views/Dashboard.js";
 import Notifications from "views/Notifications.js";
-import Icons from "views/Icons.js";
+/*import Icons from "views/Icons.js";*/
 /*import Typography from "views/Typography.js";*/
 /*import TableList from "views/Tables.js";*/
 import Maps from "views/Map.js";
@@ -42,13 +42,13 @@ var routes = [
     component: <Detect />,
     layout: "/admin",
   },*/
-  {
+  /*{
     path: "/icons",
     name: "Icons",
     icon: "nc-icon nc-diamond",
     component: <Icons />,
     layout: "/admin",
-  },
+  },*/
   {
     path: "/maps",
     name: "Maps",

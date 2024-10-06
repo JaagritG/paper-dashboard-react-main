@@ -36,6 +36,9 @@ import {
   dashboardNASDAQChart,
 } from "variables/charts.js";
 
+import my_img from "Our_logo.png";
+ // Update with the correct path to your image
+
 function Dashboard() {
   // Function to open a new tab to example.com
   const openNewTab = () => {
@@ -130,7 +133,13 @@ function Dashboard() {
         <Row>
           <Col lg="12">
             <Button color="primary" onClick={openNewTab}>
-              Open Example.com
+            <img
+                      alt="..."
+                      className="avatar border-gray"
+                      src={my_img}
+                      style={{ width: '30px', height: '30px', marginRight: '10px' }}
+                    />
+              Donate Food
             </Button>
           </Col>
         </Row>
